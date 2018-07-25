@@ -4,10 +4,12 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 load_interpolation=(
 	"\#{vpn}"
+	"\#{net}"
 	)
 
 load_commands=(
 	"#($CURRENT_DIR/scripts/display_vpn.sh)"
+	"#($CURRENT_DIR/scripts/display_net.sh)"
 	)
 
 get_tmux_option() {
