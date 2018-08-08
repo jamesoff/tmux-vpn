@@ -11,7 +11,7 @@ age=$(( $( date +%s ) - last_check ))
 
 if [[ $age -gt 30 ]]; then
 	touch connectivity-check
-	if ping -c 1 -t 2 www.amazon.com > /dev/null; then
+	if ping -c 1 -t 2 www.amazon.com > /dev/null 2> /dev/null; then
 		echo ""
 	else
 		echo "#[bg=colour1,fg=colour255] NET "
