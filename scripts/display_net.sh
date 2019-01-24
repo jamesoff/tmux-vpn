@@ -13,12 +13,12 @@ if [[ $age -gt 30 ]]; then
 	network_name=$( /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --getinfo | grep -E '\bSSID:' | cut -d: -f2- | sed -E -e 's/^ (.+)/\1/' )
 	if http https://www.google.co.uk > /dev/null 2> /dev/null; then
 		if [[ $network_name == "iPhoan X Smax" || $network_name == "iPhoan X" ]]; then
-			echo "#[bg=colour70,fg=colour255] MOB " > connectivity-check
+			echo "#[bg=colour70,fg=colour255] ﰒ  " > connectivity-check
 		else
 			echo "" > connectivity-check
 		fi
 	else
-		echo "#[bg=colour1,fg=colour255] NET " > connectivity-check
+		echo "#[bg=colour1,fg=colour255]  " > connectivity-check
 	fi
 fi
 
