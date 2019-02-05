@@ -18,7 +18,7 @@ if [[ $age -gt 30 ]]; then
 			echo "" > connectivity-check
 		fi
 	else
-		echo "#[bg=colour1,fg=colour255]  " > connectivity-check
+		echo "#[bg=colour1,fg=colour255]   " > connectivity-check
 	fi
 fi
 
